@@ -6,17 +6,6 @@
 </div>
 <img width="640" height="360" alt="rice" src="https://github.com/user-attachments/assets/859e9091-1918-4a57-a2d6-dce13a57cb1e" />
 
-
-### Running dwl
-```sh
-alias dl="exec ssh-agent ${HOME}/.local/bin/damblocks | /usr/local/bin/dwl"
-```
-
-### Status information
-I'm using the bar patch with `damblocks`([codeberg](https://codeberg.org/unixchad/damblocks)/[github](https://github.com/gnuunixchad/damblocks)), my modular POSIX script with signaling support.
-
-For a build without the `bar.patch`, checkout the `nobar` branch. You can use any compatible bar.
-
 ### Patches applied
 1. [bar](https://codeberg.org/dwl/dwl-patches/patch/bar/bar-0.7.patch)
 2. [autostart](https://codeberg.org/dwl/dwl-patches/patch/autostart/autostart-0.7.patch)
@@ -28,7 +17,7 @@ For a build without the `bar.patch`, checkout the `nobar` branch. You can use an
 8. [genericgaps](https://codeberg.org/dwl/dwl-patches/patch/genericgaps/genericgaps-0.7.patch)
 9. [alwayscenter](https://codeberg.org/dwl/dwl-patches/patch/alwayscenter/alwayscenter.patch)
 
-#### Changes I've made to [bar](https://codeberg.org/dwl/dwl-patches/patch/bar) patch:
+#### Changes that've been made to [bar](https://codeberg.org/dwl/dwl-patches/patch/bar) patch:
 - Reduce `lrpad` to 0.75, for paddings around tag names(commit f31b82b9db279c6f20689586e7ee1bc2615e2c11).
 - Draw bar status on unfocused outputs, unlike the default `dwm` bar(commit 1a9dcebcee0b99c725fe4acfa1c7968f4cf7cbd4).
 
@@ -48,10 +37,8 @@ dwl has the following dependencies:
 - wayland-protocols (compile-time only)
 - pkg-config (compile-time only)
 
-dwl has the following additional dependencies if XWayland support is enabled:
+Also you need these dependencies because XWayland support is enabled:
 - libxcb
 - libxcb-wm
 - wlroots0.18 (compiled with X11 support)
 - Xwayland (runtime only)
-
-To enable XWayland, you should uncomment its flags in `config.mk`.
