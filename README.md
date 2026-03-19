@@ -1,7 +1,7 @@
 ### My build of [dwl](https://codeberg.org/dwl/dwl)
 
 
-![rice](./misc/rice,jpg)
+![rice](misc/rice,jpg)
 
 ### Running dwl
 ```sh
