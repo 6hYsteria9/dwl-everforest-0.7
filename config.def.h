@@ -35,7 +35,7 @@ static int log_level = WLR_ERROR;
 
 /* Autostart */
 static const char *const autostart[] = {
-        "sh", "-c", "swww-daemon &", NULL,
+        "sh", "-c", "awww-daemon &", NULL,
         "sh", "-c", "dunst &", NULL,
         "sh", "-c", "wl-clip-persist --clipboard regular --reconnect-tries 0 &", NULL,
         "sh", "-c", "wl-paste --type text --watch cliphist store &", NULL,
